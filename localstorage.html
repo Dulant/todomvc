@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+<button>baocun</button>
+<script>
+	var button = document.getElementsByTagName("button")[0];
+	var value = document.getElementsByTagName("input")[0].value;
+	button.onclick = function () {
+		/*localStorage.setItem("a", {a:123});
+
+		console.log("1:", [1,2].toString());
+
+		console.log(localStorage.getItem("a"))*/
+
+		var a = {a:123};
+		console.log(a);
+		console.log("{a:123}")
+		console.log(JSON.stringify(a))
+
+		var b = '{"a":123}'
+		console.log(JSON.parse(b))
+
+	}
+</script>
+</body>
+</html>
